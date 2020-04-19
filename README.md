@@ -2,6 +2,7 @@
 //下面的几个宏用于定义设备的阿里云身份认证信息：ProductKey、ProductSecret、DeviceName、DeviceSecret
 //在实际产品开发中，设备的身份认证信息应该是设备厂商将其加密后存放于设备Flash中或者某个文件中，
 //设备上电时将其读出后使用
+```
 #define LIGHT_PRODUCT_KEY "xx"
 #define LIGHT_PRODUCT_SECRET "xxx"
 #define LIGHT_DEVICE_NAME "light"
@@ -29,3 +30,4 @@ esp_mqtt_client_config_t mqtt_cfg = {
     .username = sign_mqtt.username,
     .event_handle = mqtt_event_handler,
 };
+```
